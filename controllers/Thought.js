@@ -21,7 +21,15 @@ async function getSingleThought(req, res) {
         res.json(thought);
     }
 }
-async function updateThought() {}
+async function updateThought(req, res) {
+    const updatedThought = await Thought.findOneAndUpdate({
+        _id: req.params.thoughtID
+    }, 
+    req.body,
+    {new:true});
+
+    res.json(updatedThought);
+}
 async function deleteThought(req, res) {
     const deleteThought = await Thought.deleteOne({
         _id: req.params.thoughtID
