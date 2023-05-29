@@ -22,7 +22,13 @@ async function getSingleThought(req, res) {
     }
 }
 async function updateThought() {}
-async function deleteThought() {}
+async function deleteThought(req, res) {
+    const deleteThought = await Thought.deleteOne({
+        _id: req.params.thoughtID
+    });
+
+    res.json(deleteThought);
+}
 
 module.exports = {
     createThought,
