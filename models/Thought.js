@@ -20,11 +20,9 @@ const reactionSchema = new Schema(
             type: Date,
             required: true,
             default: Date.now,
-            // get: () => {
-            //     const date = new Date(this.createdAt);
-
-            //     return date.toLocaleString();
-            // }
+            get: (val) => {
+                return val.toLocaleString();
+            }
         }
     },
     {
@@ -47,11 +45,9 @@ const thoughtSchema = new Schema(
             type: Date,
             required: true,
             default: Date.now,
-            // get: () => {
-            //     const date = new Date(this.createdAt);
-
-            //     return date.toLocaleString();
-            // }
+            get: (val) => {
+                return val.toLocaleString();
+            }
         },
         username: {
             type: String,
@@ -66,12 +62,12 @@ const thoughtSchema = new Schema(
     }
 );
 
-// thoughtSchema
-//     .virtual("reactionCount")
-//     .get(()=>{
-//         return this.reactions.count;
-//     });
+thoughtSchema
+    .virtual("reactionCount")
+    .get(function(){
+        return this.reactions.count;
+    });
 
-const Thought = model("thought", thoughtSchema);
+const Thought = model("Thought", thoughtSchema);
 
 module.exports = Thought;
