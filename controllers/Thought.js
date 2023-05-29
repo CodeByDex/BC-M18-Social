@@ -1,6 +1,10 @@
 const Thought = require("../models/Thought");
 
-async function createThought() {}
+async function createThought(req, res) {
+    const newThought = await Thought.create(req.body);
+
+    res.json(newThought);
+}
 async function getThoughts(req, res) {
     const thoughts = await Thought.find();
 
