@@ -6,19 +6,15 @@ connection.on("error", (err) => console.log(err));
 connection.once("open", async () => {
     await User.deleteMany({});
 
-    const users = [];
-
-    users.push({
-        username: "Test",
+    await User.create({
+        username: "Test ",
         email: "test@test.test"
-    });
+    })
 
-    users.push({
-        username: "Test2",
-        email: "test2test.test"
+    await User.create({
+        username: "Test2 ",
+        email: "test2@test.test"
     });
-
-    await User.collection.insertMany(users);
 
     process.exit(0);
 });
