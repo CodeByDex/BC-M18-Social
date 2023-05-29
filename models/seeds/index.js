@@ -17,12 +17,14 @@ async function seedUsers() {
 
     await User.create({
         username: "Test ",
-        email: "test@test.test"
+        email: "test@test.test",
+        friends: []
     });
 
     await User.create({
         username: "Test2 ",
-        email: "test2@test.test"
+        email: "test2@test.test",
+        friends: []
     });
 }
 
