@@ -1,0 +1,29 @@
+_id: req_abd19882b06444bba01f78a807102464
+type: Request
+parentId: fld_5a11f164e2c34fd49d63e56daa6eab21
+modified: 1685393965834
+created: 1685393711030
+url: http://localhost:3001/api/thoughts/64751196ee7bbe8971961599
+name: Update Thought by ID
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"thoughtText": "Test Thought update3",
+    	"username": "this user"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1685389892067.25
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

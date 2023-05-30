@@ -1,0 +1,21 @@
+_id: req_17100b4dfd1344639482bd5650b836ae
+type: Request
+parentId: fld_5a11f164e2c34fd49d63e56daa6eab21
+modified: 1685393651295
+created: 1685393588349
+url: http://localhost:3001/api/thoughts/647510eea76fe70a15d8ba34
+name: Delete Thought by ID
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1685390044169.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
