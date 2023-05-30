@@ -1,0 +1,21 @@
+_id: req_90edf49529144b82ac4f15d01530a017
+type: Request
+parentId: fld_5a11f164e2c34fd49d63e56daa6eab21
+modified: 1685393835590
+created: 1685391577848
+url: http://localhost:3001/api/thoughts/64751196ee7bbe8971961599
+name: Get Thought by ID
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1685390348374
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,29 @@
+_id: req_212598118eaa4eafb2980da70a7cb98e
+type: Request
+parentId: fld_5a11f164e2c34fd49d63e56daa6eab21
+modified: 1685393488981
+created: 1685393412551
+url: http://localhost:3001/api/thoughts
+name: Create Thoughts
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"thoughtText": "Test Thought",
+    	"username": "this user"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1685390652578.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

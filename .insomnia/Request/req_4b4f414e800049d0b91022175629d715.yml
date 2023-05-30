@@ -1,0 +1,29 @@
+_id: req_4b4f414e800049d0b91022175629d715
+type: Request
+parentId: fld_d6b5565c6c4b47e5a009cfc13edd9293
+modified: 1685394504712
+created: 1685394427308
+url: http://localhost:3001/api/users
+name: Create User
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"username": "test3",
+    	"email": "test3@test.test"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1684890817632.75
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
